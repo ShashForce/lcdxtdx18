@@ -13,7 +13,12 @@
         </aura:if>
         
         <aura:set attribute="actions">
-        	<lightning:buttonStateful state="{! v.editMode }" iconNameWhenOff="utility:edit_form" labelWhenOff="Click to Edit" iconNameWhenOn="utility:check" labelWhenOn="Done Editing" onclick="{! c.toggleMode }"/>
+        	<lightning:buttonStateful state="{! v.editMode }" 
+					iconNameWhenOff="utility:edit_form" 
+					labelWhenOff="Click to Edit" 
+					iconNameWhenOn="utility:check" 
+					labelWhenOn="Done Editing" 
+					onclick="{! c.toggleMode }"/>
         </aura:set>
         
     </lightning:card>   
